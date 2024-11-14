@@ -33,7 +33,7 @@ const Homepage = () => {
         {/* text */}
         <div className="h-1/2 flex flex-col gap-8 items-center justify-center mt-8 lg:flex-1">
           {/* TITLE */}
-          <h1 className="text-4xl lg:text-6xl font-bold">Hello, Welcome to my website <Link href="/about"><button className=''>🥱</button></Link>!</h1>
+          <h1 className="text-4xl lg:text-6xl font-bold">Welcome to my website <Link href="/about"><button className=''>🥱</button></Link>!</h1>
           <p className="lg:text-xl">I'm Benjamin Zeng, a second year student in Electrical Engineering @ the University of Waterloo. Click the EMOJI about to learn more about me! </p>
           
           <p className="lg:text-xl font-bold text-red-600 pr-8">ADVERTISING SPACE FOR RENT 广告位招租     </p>
