@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 
 import Image from "next/image";
+import Link from "next/link";
 
 const Homepage = () => {
   return(
@@ -32,12 +33,13 @@ const Homepage = () => {
         {/* text */}
         <div className="h-1/2 flex flex-col gap-8 items-center justify-center mt-8 lg:flex-1">
           {/* TITLE */}
-          <h1 className="text-4xl lg:text-6xl font-bold">Welcome to my website🥱!</h1>
-          <p className="lg:text-xl">I'm Benjamin Zeng, a second year student in Electrical Engineering @ the University of Waterloo. </p>
+          <h1 className="text-4xl lg:text-6xl font-bold">Welcome to my website <Link href="/about"><button className=''>🥱</button></Link>!</h1>
+          <p className="lg:text-xl">I'm Benjamin Zeng, a second year student in Electrical Engineering @ the University of Waterloo. Click the EMOJI about to learn more about me! </p>
+          
           <p className="lg:text-xl font-bold text-red-600 pr-8">ADVERTISING SPACE FOR RENT 广告位招租     </p>
           <div className="flex gap-12">
-            <button className="p-4 rounded-lg right-black bg-black text-white">View my work</button>
-            <button className="p-4 rounded-lg right-black">Contact</button>
+            <Link href="/portfolio"><button className="p-4 rounded-lg right-black bg-black text-white">View my work</button></Link>
+            <Link href="/contact"><button className="p-4 rounded-lg right-black">Contact</button></Link>
           </div>
         </div>
       </div>

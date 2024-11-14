@@ -173,7 +173,7 @@ const AboutPage = () => {
 
 
                     {/* experience */}
-                    <div className="flex flex-col gap-12 justify-center" ref={experienceRef}>
+                    <div className="flex flex-col gap-12 justify-center pb-10" ref={experienceRef}>
                     
                         <motion.h1 initial={{x:"-300px"}} animate={IsExperienceRefInView ? {x:"0"} : {}} transition={{delay:0.2}} className="font-bold text-2xl">EXPERIENCE</motion.h1>
                         {/* experience list */}
@@ -239,7 +239,7 @@ const AboutPage = () => {
                                     </div>
                                     {/* job description */}
                                     <div className="p-3 text-sm italic">
-                                        My current employment, better than my previous job
+                                        My current employment
                                     </div>
                                     {/* job date */}
                                     <div className="p-3 text-red-400 text-sm font-semibold">
