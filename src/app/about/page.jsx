@@ -29,8 +29,8 @@ const AboutPage = () => {
                     {/* biography */}
                     <div className="flex flex-col gap-12 justify-center">
                         <h1 className="font-bold text-2xl">BIOGRAPHY</h1>
-                        <p className="text-lg">The most popular sentence generator tool is Wordkraft AI. This AI software uses a sophisticated algorithm to generate unique, grammatically correct sentences based on a large corpus of existing text.</p>
-                        <span className="italic">....................</span>
+                        <p className="text-lg">I have a deep passion for exploring new technologies and solving complex problems, particularly through the process of hands-on experimentation and learning. As an Electrical Engineering student at the University of Waterloo, I am currently developing my skills in FPGA, STM32, PLC and full-stack development. I enjoy working with classic programming languages like C/C++, Java, JavaScript and VHDL/Verilog, and I'm excited to explore the integration of these with hardware to create innovative solutions. My interests span across designing efficient systems, optimizing embedded applications, and diving into fields like AI and machine learning. I am driven by continuous learning and the thrill of discovering new possibilities in these ever-evolving areas.</p>
+                        <span className="italic">Hobby：吃饭睡觉打豆豆</span>
                     
 
                         <div className="self-end p-0 m-0">
@@ -81,67 +81,82 @@ const AboutPage = () => {
                         {/* skill list */}
                         <motion.div initial={{x:"-300px"}} animate={IsSkillRefInView ? {x:"0"} : {}} className="flex gap-4 flex-wrap">
                             <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                                JavaScript
+                                C/C++
                             </div>
                             <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                                 JavaScript
                             </div>
                             <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                                JavaScript
+                                Java
                             </div>
                             <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                                JavaScript
+                                VHDL/Verilog
                             </div>
                             <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                                JavaScript
+                                HTML/CSS
                             </div>
                             <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                                JavaScript
+                                FPGA
                             </div>
                             <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                                JavaScript
+                                STM32
                             </div>
                             <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                                JavaScript
+                                PLC
                             </div>
                             <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                                JavaScript
+                                Ladder Logic
                             </div>
                             <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                                JavaScript
+                                QT Creator
                             </div>
                             <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                                JavaScript
+                                OpenCV
                             </div>
                             <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                                JavaScript
+                                React.js
                             </div>
                             <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                                JavaScript
+                                Node.js
                             </div>
                             <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                                JavaScript
+                                Next.js
                             </div>
                             <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                                JavaScript
+                                jQuery
                             </div>
                             <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                                JavaScript
+                                BootStrap
                             </div>
                             <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                                JavaScript
+                                MongoDB
                             </div>
                             <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                                JavaScript
+                                PostgreSQL
                             </div>
                             <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                                JavaScript
+                                Docker
                             </div>
                             <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                                JavaScript
+                                Prisma
                             </div>
                             <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                                JavaScript
+                                Postman
+                            </div>
+                            <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                                Git
+                            </div>
+                            <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                                Spring Boot
+                            </div>
+                            <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                                ModelSim
+                            </div>
+                            <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                                Inter Quartus 
+                            </div>
+                            <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                                Mitsubish PLC
                             </div>
                         </motion.div>
 
@@ -173,7 +188,7 @@ const AboutPage = () => {
 
 
                     {/* experience */}
-                    <div className="flex flex-col gap-12 justify-center pb-10" ref={experienceRef}>
+                    <div className="flex flex-col gap-12 justify-center pb-12" ref={experienceRef}>
                     
                         <motion.h1 initial={{x:"-300px"}} animate={IsExperienceRefInView ? {x:"0"} : {}} transition={{delay:0.2}} className="font-bold text-2xl">EXPERIENCE</motion.h1>
                         {/* experience list */}
@@ -186,11 +201,11 @@ const AboutPage = () => {
                                 <div className="w-1/3">
                                     {/* job title*/}
                                     <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                                        Software Engineer
+                                        Soft-Hardware Engineer
                                     </div>
                                     {/* job description */}
                                     <div className="p-3 text-sm italic">
-                                        My current employment, better than my previous job
+                                        My current employment
                                     </div>
                                     {/* job date */}
                                     <div className="p-3 text-red-400 text-sm font-semibold">
@@ -198,7 +213,7 @@ const AboutPage = () => {
                                     </div>
                                     {/* Organization name */}
                                     <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
-                                        University of Toronto
+                                        Chamlion Inc
                                     </div>
 
                                 </div>
@@ -235,19 +250,20 @@ const AboutPage = () => {
                                 <div className="w-1/3">
                                     {/* job title*/}
                                     <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                                        Software Engineer
+                                        University Student
                                     </div>
                                     {/* job description */}
                                     <div className="p-3 text-sm italic">
-                                        My current employment
+                                        Core Courses: Computer System | Mathematics
+                                        CGPA: 92.00%
                                     </div>
                                     {/* job date */}
                                     <div className="p-3 text-red-400 text-sm font-semibold">
-                                        2024 - Present
+                                        2023 - 2028
                                     </div>
                                     {/* Organization name */}
                                     <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
-                                        University of Toronto
+                                        University of Waterloo
                                     </div>
                                 </div>
                             </div>
@@ -260,19 +276,19 @@ const AboutPage = () => {
                                 <div className="w-1/3">
                                     {/* job title*/}
                                     <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                                        Software Engineer
+                                        High School Student
                                     </div>
                                     {/* job description */}
                                     <div className="p-3 text-sm italic">
-                                        My current employment, better than my previous job
+                                        Graduated with an average of 97.5% (top 6)
                                     </div>
                                     {/* job date */}
                                     <div className="p-3 text-red-400 text-sm font-semibold">
-                                        2024 - Present
+                                        2021 - 2023
                                     </div>
                                     {/* Organization name */}
                                     <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
-                                        University of Toronto
+                                        Unionville High School
                                     </div>
                                 </div>
                                 {/* middle  */}
@@ -287,6 +303,28 @@ const AboutPage = () => {
                                 {/* right */}
                                 <div className="w-1/3"></div>
                             </div>
+
+                            {/* later */}
+                            {/* experience list items */}
+                            <div className="flex justify-between h-48">
+                                {/* Left */}
+                                <div className="w-1/3">
+                                </div>
+                                {/* middle  */}
+                                <div className="w-1/6">
+                                    {/* Line */}
+                                    <div className="w-1 h-full bg-gray-600 rounded relative"> 
+                                        {/* Circle */}
+                                        <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2">
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                {/* right */}
+                                <div className="w-1/3"></div>
+                            </div>
+
                         </motion.div>
                     </div>
                 </div>

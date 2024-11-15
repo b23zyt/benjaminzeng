@@ -6,7 +6,7 @@ import emailjs from '@emailjs/browser';
 const ContactPage = () => {
     const [success, setSuccess] = useState(false);
     const [error, setError] = useState(false);
-    const text = "Contact me";
+    const text = "Send me an email";
 
     const form = useRef();
     const sendEmail = (e) => {
@@ -32,7 +32,7 @@ const ContactPage = () => {
 
     return (
         <motion.div className="h-full" initial={{y:"-200vh"}} animate={{y:"0%"}} transition={{duration:1}}> 
-            <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-28 ">
+            <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-28 scroll-y-auto">
                 {/* text */}
                 <div className="h-1/2 lg:h-full lg:w-1/2 flex items-center justify-center text-6xl">
                     <div>
@@ -50,9 +50,9 @@ const ContactPage = () => {
                 </div>
 
                 {/* form  */}
-                <form ref={form} onSubmit={sendEmail} className="h-1/2 lg:h-full lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-8 justify-center p-24">
+                <form ref={form} onSubmit={sendEmail} className="h-1/2 lg:h-full lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-4 justify-center p-24 lg:gap-4">
                     <span>Hi Benjamin,</span>
-                    <textarea rows={6} name="user_message" className="bg-transparent border-b-2 border-b-black outline-none resize-none"/>
+                    <textarea rows={6} name="user_message" className="bg-transparent border-b-2 border-b-black outline-none resize-none hidden lg:block"/>
                     <span>My Mail Address is:</span>
                     <input type="text" name="user_email" className="bg-transparent border-b-2 border-b-black outline-none" />
                     <span>Regards</span>

@@ -6,8 +6,8 @@ import { usePathname } from "next/navigation";
 const NavLink = ({link}) => {
 
     const pathName = usePathname();
-
-    console.log(pathName)
+    //console.log(pathName)
+    //console.log(link.url)
     
     
     return <Link className={`rounded p-1 ${pathName == link.url && "bg-black text-white"}`} href={link.url}>

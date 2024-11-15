@@ -46,8 +46,8 @@ const Navbar = () => {
             <Link href="https://github.com/b23zyt">
                 <Image src="/github.png" alt="github icon" width={24} height={24}/>
             </Link>
-            <Link href="https://github.com/b23zyt">
-                <Image src="/linkedin.png" alt="github icon" width={24} height={24}/>
+            <Link href="https://www.linkedin.com/in/benjaminzeng2110/">
+                <Image src="/linkedin.png" alt="Linkedin icon" width={24} height={24}/>
             </Link>
             <Link href="https://github.com/b23zyt">
                 <Image src="/instagram.png" alt="github icon" width={24} height={24}/>
@@ -67,8 +67,8 @@ const Navbar = () => {
 
             {/* menu list */}
             {open && <div className="absolute top-0 left-0 w-screen h-screen bg-black text-white flex flex-col items-center justify-center gap-8 text-4xl z-30" >
-                {links.map(link => (
-                    <Link href={link.url} key={link.title}>{link.title}</Link>
+                {links.map((link) => (
+                    <Link href={link.url} key={link.title} onClick={handleClick}>{link.title}</Link>
                 ))}
             </div>}
             

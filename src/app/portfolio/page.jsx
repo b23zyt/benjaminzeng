@@ -8,34 +8,34 @@ const items = [
     {
       id: 1,
       color: "from-red-50 to-blue-300",
-      title: "React Commerce",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-      img: "/star.png",
-      link: "https://lama.dev",
+      title: "ST7735 Display",
+      desc: "Detect temperature through TMP102 and display it on a ST7735 Display. Active the buzzer when the termperature exceeds the set temperature",
+      img: "/stdisplay.png",
+      link: "https://github.com/b23zyt/stm32f4_st7735_tmp102_buzzer",
     },
     {
       id: 2,
       color: "from-blue-300 to-violet-300",
-      title: "Next.js Medium Blog",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-      img: "/star.png",
-      link: "https://lama.dev",
+      title: "FPGA Stop Watch",
+      desc: "Developed a Verilog-based stopwatch system on a Cyclone IV FPGA capable of counting time from 0 to 9999.99 seconds.",
+      img: "/stopwatch.png",
+      link: "https://github.com/b23zyt/FPGA-stop-watch",
     },
     {
       id: 3,
       color: "from-violet-300 to-purple-300",
-      title: "Vanilla Book App",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-      img: "/star.png",
-      link: "https://lama.dev",
+      title: "Real Estate App",
+      desc: "Built a Real-time chat-enabled Real Estate Application using MERN stack and Socket.io.",
+      img: "/E7.png",
+      link: "https://github.com/b23zyt/Estate_app",
     },
     {
       id: 4,
       color: "from-purple-300 to-red-300",
-      title: "Spotify Music App",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-      img: "/star.png",
-      link: "https://lama.dev",
+      title: "Temperature Monitor",
+      desc: "Developed a Sequential VHDL code for temperature monitoring and programmed it on a Cyclone Max 10",
+      img: "/temmonitor.png",
+      link: "https://github.com/b23zyt/124_vhdl_temperature_monitor",
     },
   ];
 
@@ -56,7 +56,7 @@ const PortfolioPage = () => {
                                 <h1 className="text-xl font-bold md:text-4xl lg:text-4xl xl:text-6xl">
                                     {item.title}
                                 </h1>
-                                <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[350px] lg:h-[300px] xl:w-[420px] xl:h-[370px]">
+                                <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[350px] lg:h-[300px] xl:w-[420px] xl:h-[370px] flex items-center justify-center">
                                     <Image src={item.img} alt="" fill />
                                 </div>
                                 <p className="w-80 md:w96 lg:w-[500px] lg:text-lg xl:w-[600px]">
